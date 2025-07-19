@@ -1,8 +1,8 @@
 :root {
   --primary: #2c3e50;
-  --accent: #e67e22;
-  --light: #ecf0f1;
-  --dark: #34495e;
+  --accent:  #e67e22;
+  --light:   #ecf0f1;
+  --dark:    #34495e;
 }
 
 * {
@@ -11,57 +11,39 @@
   padding: 0;
 }
 
-body {
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   font-family: 'Roboto', sans-serif;
-  color: var(--primary);
   background: var(--light);
+  color: var(--primary);
 }
 
-header.top-bar {
+.site-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background: transparent;
-  margin-bottom: 1rem;
+  background: var(--light);
 }
 
-img.logo {
-  max-width: 230px;
+.site-header .logo {
+  max‑width: 200px;
   height: auto;
 }
 
-.language-switcher {
-  margin-left: auto;
-}
-
-.hero {
-  margin-top: 20px; /* Fix the top overlap */
-  padding: 4rem 2rem;
-  background: var(--dark);
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-}
-
-img.logo {
-  float: left;
-  max-width: 230px;
-  margin: 10px 20px;
-}
-
-.language-switcher {
-  text-align: right;
-  margin: 10px 20px;
-}
-
-.language-switcher .btn {
+.site-header .lang-btn {
   background: var(--accent);
   color: #fff;
   padding: 0.5rem 1rem;
-  text-decoration: none;
   border-radius: 4px;
+  text-decoration: none;
   font-weight: bold;
+}
+
+main {
+  flex: 1;
 }
 
 .hero {
@@ -69,7 +51,8 @@ img.logo {
   color: #fff;
   text-align: center;
   padding: 4rem 2rem;
-  margin-top: 20px;
+  margin: 1rem 2rem;
+  border-radius: 6px;
 }
 
 .hero h1 {
@@ -93,7 +76,7 @@ img.logo {
 
 section {
   padding: 2rem;
-  max-width: 900px;
+  max‑width: 900px;
   margin: 0 auto;
 }
 
@@ -140,9 +123,9 @@ form button {
 }
 
 footer {
-  text-align: center;
-  padding: 1rem;
   background: var(--primary);
   color: #fff;
-  margin-top: 40px;
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
 }
