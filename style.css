@@ -24,19 +24,22 @@ html, body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
-  background: var(--light);
+  background: var(--dark);
+  padding: 0.5rem 2rem;
+  margin: 0 2rem;               /* flush with sides */
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
 }
 
 .site-header .logo {
-  max‑width: 200px;
+  max-width: 150px;
   height: auto;
 }
 
 .site-header .lang-btn {
   background: var(--accent);
   color: #fff;
-  padding: 0.5rem 1rem;
+  padding: 0.4rem 0.8rem;
   border-radius: 4px;
   text-decoration: none;
   font-weight: bold;
@@ -50,14 +53,20 @@ main {
   background: var(--dark);
   color: #fff;
   text-align: center;
-  padding: 4rem 2rem;
-  margin: 1rem 2rem;
-  border-radius: 6px;
+  padding: 2.5rem 2rem;
+  margin: 0 2rem 1rem;         /* sits directly under header */
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
 }
 
 .hero h1 {
   font-size: 2rem;
   margin-bottom: 0.5rem;
+}
+
+.hero h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.25rem;
 }
 
 .hero p {
@@ -76,7 +85,7 @@ main {
 
 section {
   padding: 2rem;
-  max‑width: 900px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -87,7 +96,8 @@ form {
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-form input, form textarea {
+form input,
+form textarea {
   width: 100%;
   padding: 0.5rem;
   margin-bottom: 1rem;
@@ -120,12 +130,3 @@ form button {
 
 .service h3 {
   margin-bottom: 0.5rem;
-}
-
-footer {
-  background: var(--primary);
-  color: #fff;
-  text-align: center;
-  padding: 1rem;
-  margin-top: auto;
-}
