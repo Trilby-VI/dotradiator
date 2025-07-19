@@ -1,6 +1,6 @@
 .big-dot {
-  font-size: 1.6em;
+  font-size: 1.7em;
   position: relative;
-  top: 0.14em;      /* Use positive or negative values to nudge the dot up/down */
-  margin: 0 -0.11em;
+  top: 0.11em;      /* Use positive or negative values to nudge the dot up/down */
+  margin: 0 -0.09em;
 }
