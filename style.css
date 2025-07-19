@@ -17,6 +17,33 @@ body {
   background: var(--light);
 }
 
+header.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: transparent;
+  margin-bottom: 1rem;
+}
+
+img.logo {
+  max-width: 230px;
+  height: auto;
+}
+
+.language-switcher {
+  margin-left: auto;
+}
+
+.hero {
+  margin-top: 20px; /* Fix the top overlap */
+  padding: 4rem 2rem;
+  background: var(--dark);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+}
+
 img.logo {
   float: left;
   max-width: 230px;
