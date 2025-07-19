@@ -2,68 +2,96 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DoT Radiator en San Leandro, CA - Restauración de radiadores clásicos y reparación de sistemas de enfriamiento desde 1972.">
   <title>D●T Radiator • Desde 1972</title>
-  <link rel="icon" href="drfavicon.png">
-  <meta name="description" content="DoT Radiator en San Leandro, CA – Restauración de radiadores clásicos y reparación de sistemas de enfriamiento desde 1972.">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="/drfavicon.png">
+  <style>
+    body { font-family: Arial, sans-serif; padding: 0 20px; max-width: 900px; margin: auto; background: #f5f7fa; color: #333; }
+    header, footer, section { margin-bottom: 30px; }
+    /* Improved language switcher styling */
+    .language-switcher {
+      position: fixed;
+      top: 10px;
+      right: 20px;
+      background: rgba(255,255,255,0.9);
+      padding: 6px 12px;
+      border-radius: 4px;
+      font-size: 0.9rem;
+      font-weight: bold;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+      z-index: 1000;
+    }
+    .language-switcher a, .language-switcher strong {
+      color: #111827;
+      text-decoration: none;
+      margin: 0 4px;
+    }
+    .language-switcher a:hover {
+      text-decoration: underline;
+    }
+    h1, h2 { color: #222; }
+    .hero { background: #111827; color: white; text-align: center; padding: 50px 20px; }
+    .btn { display: inline-block; margin-top: 20px; padding: 12px 24px; background: #f59e0b; color: white; text-decoration: none; border-radius: 4px; }
+    .services { display: grid; grid-template-columns: 1fr; gap: 20px; }
+    @media(min-width:600px) { .services { grid-template-columns: repeat(3,1fr); } }
+    .card { background: white; padding: 20px; border-radius: 6px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    form input, form textarea { width: 100%; padding: 12px; margin-top: 10px; border: 1px solid #ccc; border-radius: 4px; }
+    form button { margin-top: 15px; padding: 12px 20px; background: #111827; color: white; border: none; border-radius: 4px; cursor: pointer; }
+    a { color: #2563eb; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    /* Refuerzo: texto de héroe legible */
+  .hero h1, .hero p { color: #fff; }
+</style>
 </head>
 <body>
-  <header class="site-header">
-    <img src="dot_radiator_logo.jpg" alt="D●T Radiator" class="logo">
-    <a href="index.html" class="lang-btn">English</a>
+  <img src="dot_radiator_logo.jpg" alt="D●T Radiator" style="float: left; max-width: 170px; margin: 10px 20px;">
+  <div class="language-switcher">
+    <a href="/index.html">English</a> | <strong>Español</strong>
+  </div>
+  <header class="hero">
+    <h1>D●T Radiator • (510) 276-5611</h1>
+    <h1>Ahora ubicados en <STRONG>1734 Timothy Dr, San Leandro, CA</STRONG></h1>
+    <h1>Especialistas en Sistemas de Enfriamiento Automotriz<h1>
+    <p> Más de 50 Años de Experiencia <p>
+    <p>Negocio familiar operado por Mario Martinez desde 1972</p>
+    <a href="#contacto" class="btn">Obtener cotización gratuita</a>
+    <p style="margin-top:20px;">¿Necesitas ayuda con tu radiador? Llámanos o deja un mensaje: <strong>(510) 276-5611</strong></p>
   </header>
-
-  <main>
-    <section class="hero">
-      <h1>D●T Radiator • (510) 276‑5611</h1>
-      <h2>Ahora ubicados en <strong>1734 Timothy Dr, San Leandro, CA</strong></h2>
-      <h2>Especialistas en Sistemas de Enfriamiento Automotriz</h2>
-      <p>Más de 50 años de experiencia</p>
-      <a href="#contacto" class="btn">Obtener cotización gratuita</a>
-      <p style="margin-top:1.5rem; font-size:1.1rem; color:#fff;">
-        ¿Necesitas ayuda con tu radiador? Llámanos o deja un mensaje:
-      </p>
-      <h2><strong>(510) 276‑5611</strong></h2>
-    </section>
-
-    <section id="contacto">
-      <h2>Contáctanos</h2>
-      <form action="https://formspree.io/f/meozoeng" method="POST">
-        <input type="text" name="Name" placeholder="Tu Nombre" required>
-        <input type="email" name="Email" placeholder="Tu Correo Electrónico" required>
-        <input type="tel" name="Phone" placeholder="Tu Número de Teléfono">
-        <textarea name="Message" rows="5" placeholder="Tu Mensaje" required></textarea>
-        <button type="submit">Enviar Mensaje</button>
-      </form>
-    </section>
-
-    <section id="services">
-      <h2>Nuestros Servicios</h2>
-      <div class="service">
-        <h3>Reparación de Sistemas de Enfriamiento</h3>
+  <section>
+<section id="contacto">
+    <h2>Contáctanos</h2>
+    <form action="https://formspree.io/f/meozoeng" method="POST">
+      <input type="text" name="Name" placeholder="Tu Nombre" autocomplete="name" required>
+      <input type="email" name="Email" placeholder="Tu Correo Electrónico" autocomplete="email" required>
+      <input type="tel" name="Phone" placeholder="Tu Número de Teléfono" autocomplete="tel">
+      <textarea name="Message" rows="5" placeholder="Tu Mensaje" required></textarea>
+      <button type="submit">Enviar Mensaje</button>
+    </form>
+  </section>
+<section>
+    <p>Sobre Nosotros</p>
+    <h2>D●T Radiator es tu taller de confianza para la restauración de radiadores clásicos y la reparación integral de sistemas de enfriamiento. Con décadas de experiencia práctica, nos especializamos en todo lo que está bajo el capó para mantener tu motor a la temperatura óptima—incluyendo bombas de agua, termostatos, correas de ventilador, mangueras, núcleos de calefacción e incluso tanques de gasolina antiguos con fugas y óxido. Ya sea que estés restaurando un auto clásico o manteniendo tu vehículo diario, ofrecemos el tipo de cuidado que solo las décadas de experiencia pueden brindar.</h2>
+    <h2><a href="https://www.yelp.com/biz/dot-radiator-san-lorenzo?utm_source=chatgpt" target="_blank">Véanos en Yelp</a></h2>
+  </section>
+  <section>
+    <h2>Nuestros Servicios</h2>
+    <div class="services">
+      <div class="card">
+        <h3>Reparación de Sistemas de Enfriamiento Automotriz</h3>
         <p>Diagnóstico y reparación de radiadores, bombas de agua, termostatos, correas de ventilador, mangueras y núcleos de calefacción.</p>
       </div>
-      <div class="service">
+      <div class="card">
         <h3>Especialistas en Vehículos Clásicos</h3>
-        <p>Especializados en radiadores y sistemas vintage para autos clásicos—conocimiento que no encontrarás en talleres de cadena.</p>
+        <p>Especializados en radiadores y sistemas de enfriamiento vintage para autos clásicos—conocimiento que no encontrarás en talleres de cadena.</p>
       </div>
-      <div class="service">
+      <div class="card">
         <h3>Reparación de Tanques de Gasolina</h3>
-        <p>Eliminación de óxido, sellado de fugas y recubrimiento para restaurar tanques antiguos.</p>
+        <p>Eliminación de óxido, sellado de fugas y recubrimiento para restaurar tanques antiguos a condiciones seguras y como nuevos.</p>
       </div>
-    </section>
-
-    <section id="about">
-      <h2>Sobre Nosotros</h2>
-      <p>D●T Radiator es tu taller de confianza para la restauración de radiadores clásicos y la reparación integral de sistemas de enfriamiento. Con décadas de experiencia práctica, nos especializamos en todo lo que está bajo el capó para mantener tu motor a la temperatura óptima—bombas de agua, termostatos, correas de ventilador, mangueras, núcleos de calefacción e incluso tanques antiguos con fugas y óxido. Ya sea que restaures un auto clásico o mantengas tu vehículo diario, ofrecemos el cuidado que solo las décadas de experiencia pueden brindar.</p>
-      <p><a href="https://www.yelp.com/biz/dot-radiator-san-lorenzo?utm_source=chatgpt" target="_blank">Véanos en Yelp</a></p>
-    </section>
-  </main>
-
-  <footer>
-    Licencia #275617 • © 1972–2025 D●T Radiator • 1734 Timothy Dr, San Leandro, CA • (510) 276‑5611 • ¡Hablamos Español!
+  </section>
+  <footer style="position: fixed; bottom: 0; left: 0; width: 100%; background: #222; color: white; text-align: center; padding: 1rem;">
+    Licencia #275617 • &copy; 1972-2025 D●T Radiator • 1734 Timothy Dr, San Leandro, CA • (510) 276-5611 • ¡Hablamos Español!
   </footer>
 </body>
 </html>
