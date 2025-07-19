@@ -14,33 +14,180 @@
   <meta property="og:type" content="website">
   <meta name="keywords" content="DOT Radiator, Mario Martinez, cooling system specialist, radiator repair, san lorenzo radiators, san leandro radiators">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --primary: #2c3e50;
-      --accent: #e67e22;
-      --light: #ecf0f1;
-      --dark: #34495e;
-    }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: 'Roboto', sans-serif; color: var(--primary); background: var(--light); }
-    header { background: var(--primary); color: #fff; padding: 0rem 2rem; display: flex; justify-content: space-between; align-items: center; }
-    header nav a { color: #fff; margin-left: 1rem; text-decoration: none; font-weight: bold; }
-    .hero { position: relative; background: var(--dark); color: #fff; text-align: center; padding: 0rem 2rem; }
-    .hero::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.6); }
-    .hero * { position: relative; }
-    .hero h1 { font-size: 2rem; margin-bottom: 0.5rem; }
-    .hero p { margin-bottom: 0.5rem; }
-    .btn { display: inline-block; background: var(--accent); color: #fff; padding: 0.75rem 1.5rem; text-decoration: none; border-radius: 4px; margin-top: 1rem; }
-    section { padding: 2rem; max-width: 900px; margin: 0 auto; }
-    #about img { width: 45%; margin: 1%; border-radius: 4px; }
-    #services { display: flex; flex-wrap: wrap; gap: 1rem; }
-    .service { background: #fff; flex: 1 1 calc(50% - 1rem); border-radius: 4px; padding: 1rem; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-    .service h3 { margin-bottom: 0.5rem; }
-    form { background: #fff; padding: 1rem; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-    form input, form textarea { width: 100%; padding: 0.5rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 4px; }
-    form button { background: var(--accent); color: #fff; padding: 0.75rem 1.5rem; border: none; border-radius: 4px; cursor: pointer; }
-    footer { text-align: center; padding: 1rem; background: var(--primary); color: #fff; }
-  </style>
+<style>
+  /* Color palette */
+  :root {
+    --primary: #2c3e50;
+    --accent:  #e67e22;
+    --light:   #ecf0f1;
+    --dark:    #34495e;
+  }
+
+  /* Reset & base */
+  *, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--primary);
+    background: var(--light);
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+    line-height: 1.6;
+  }
+  header, section, footer {
+    margin-bottom: 30px;
+  }
+
+  /* Header */
+  header {
+    background: var(--primary);
+    color: #fff;
+    padding: 0 2rem;           /* flush to top */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header nav a {
+    color: #fff;
+    margin-left: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  header nav a:hover {
+    text-decoration: underline;
+  }
+
+  /* Language switcher */
+  .language-switcher {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    background: rgba(255,255,255,0.9);
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+    z-index: 1000;
+  }
+  .language-switcher a,
+  .language-switcher strong {
+    color: #111827;
+    text-decoration: none;
+    margin: 0 4px;
+  }
+  .language-switcher a:hover {
+    text-decoration: underline;
+  }
+
+  /* Hero */
+  .hero {
+    position: relative;
+    background: var(--dark);
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+  }
+  .hero * { position: relative; }
+  .hero h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  .hero p {
+    margin-bottom: 0.5rem;
+  }
+
+  /* Buttons */
+  .btn {
+    display: inline-block;
+    background: var(--accent);
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 1rem;
+  }
+
+  /* Services grid */
+  .services {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  }
+  .service,
+  .card {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  .service h3 {
+    margin-bottom: 0.5rem;
+  }
+
+  /* About images */
+  #about img {
+    width: 45%;
+    margin: 1%;
+    border-radius: 4px;
+  }
+
+  /* Forms */
+  form {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  form button {
+    background: var(--accent);
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  /* Links */
+  a {
+    color: var(--primary);
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background: var(--primary);
+    color: #fff;
+  }
+</style>
+
 </head>
 <body>
   <img src="dot_radiator_logo.jpg" alt="D●T Radiator" style="float: left; max-width: 230px; margin: 10px 20px;">
