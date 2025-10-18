@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://dotradiator.com/</loc>
+    <image:image>
+      <image:loc>https://dotradiator.com/DOT%20Radiator%20Logo%20Design1.png</image:loc>
+      <image:title>DOT Radiator Logo</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://dotradiator.com/dot_radiator_logo.jpg</image:loc>
+      <image:title>DOT Radiator Logo (Alt)</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://dotradiator.com/dotradiatorlogoorange.png</image:loc>
+      <image:title>DOT Radiator Orange Logo</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://dotradiator.com/dotradiatorcom.png</image:loc>
+      <image:title>DOTRadiator.com Mark</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://dotradiator.com/JKLIFTlogo.png</image:loc>
+      <image:title>JK Lift Logo</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://dotradiator.com/espanol.html</loc>
+    <image:image>
+      <image:loc>https://dotradiator.com/DOT%20Radiator%20Logo%20Design1.png</image:loc>
+      <image:title>DOT Radiator Logo</image:title>
+    </image:image>
+  </url>
+</urlset>
