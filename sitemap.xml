@@ -3,7 +3,7 @@
   <!-- Canonical homepage (avoid also listing /index.html to prevent duplication) -->
   <url>
     <loc>https://dotradiator.com/</loc>
-    <lastmod>2025-10-18</lastmod>
+    <lastmod>2025-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -11,7 +11,7 @@
   <!-- Spanish page -->
   <url>
     <loc>https://dotradiator.com/espanol.html</loc>
-    <lastmod>2025-10-18</lastmod>
+    <lastmod>2025-10-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
